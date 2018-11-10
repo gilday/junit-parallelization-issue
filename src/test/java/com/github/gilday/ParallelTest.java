@@ -73,6 +73,12 @@ final class ParallelTest {
   @AfterAll
   static void afterAll() {
     final int parallelism = Integer.parseInt(System.getProperty("junit.parallelism"));
-    assertTrue(parallelism >= counter.max());
+    assertTrue(
+        parallelism >= counter.max(),
+        "Expected at most "
+            + parallelism
+            + " concurrent tests, but observed "
+            + counter.max()
+            + " concurrent tests");
   }
 }

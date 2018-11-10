@@ -1,5 +1,7 @@
 # junit-parallelization-issue
 
+[![Build Status](https://travis-ci.org/gilday/junit-parallelization-issue.svg?branch=master)](https://travis-ci.org/gilday/junit-parallelization-issue)
+
 While working with parallel test execution in JUnit 5.3, I came across a mystery
 that I have not yet solved wherein I can trick JUnit into running more
 concurrent tests than it is configured to run as a side-effect of sleeping a
